@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Profile Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 20px;
+        }
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .profile-header {
+            display: flex;
+            gap: 20px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #000;
+            object-fit: cover;
+        }
+        .bio-info h2 {
+            margin: 0 0 10px 0;
+        }
+        .bio-info p {
+            margin: 3px 0;
+            font-size: 14px;
+        }
+        .categories {
+            text-align: right;
+            font-size: 14px;
+        }
+        .categories h3 {
+            margin: 0;
+            text-decoration: underline;
+        }
+
+        /* Nav */
+        nav {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #000;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* Main Content Layout (Article & Aside) */
+        .main-content {
+            display: flex;
+            gap: 20px;
+        }
+        article {
+            flex: 2;
+        }
+        section {
+            margin-bottom: 15px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        aside {
+            flex: 1;
+            border-left: 2px solid #ccc;
+            padding-left: 15px;
+        }
+
+        /* Multimedia Section */
+        .multimedia-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            border-top: 2px solid #000;
+            padding-top: 15px;
+        }
+        .media-box {
+            border: 2px solid #000;
+            padding: 5px;
+        }
+        .video-box {
+            width: 120px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+            width: 180px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: 70px;
+            border: 1px solid #000;
+            object-fit: cover;
+        }
+        .attachments-box {
+            flex: 1;
+            border: 2px solid #000;
+            padding: 10px;
+        }
+        .attachments-box h4 {
+            margin: 0 0 10px 0;
+            text-decoration: underline;
+        }
+        .attachments-box ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .attachments-box li {
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            border-top: 2px solid #000;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header: Foto diri dan Informasi Diri (a) -->
+    <header>
+        <div class="profile-header">
+            <!-- Ganti src dengan foto Anda -->
+            <img src="gambar1.jpeg" alt="Foto Diri" class="profile-img">
+            <div class="bio-info">
+                <h2>Rahmat Campa Aulia</h2>
+                <p>Depok, 30 April 2008</p>
+                <p>Jl.Sadewa 1 NO. 191 RT 3 RW 18</p>
+                <p>Mekarjaya, Sukmajaya Kota Depok</p>
+                <p><strong>Email:</strong> <a href="mailto:rahmataulia217@gmail.com">rahmataulia217@gmail.com</a></p>
+                <p><strong>Telephone:</strong> 085178251651</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav: Berisi Menu Navigasi (b) -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#attachments">Attachments</a>
+    </nav>
+
+    <!-- Content: Article & Aside (c & d) -->
+    <div class="main-content">
+        <article>
+            <!-- Deskripsi diri 2 paragraf -->
+            <section id="about">
+                <p>Perkenalkan, nama saya Rahmat Campa Aulia, mahasiswa jurusan Teknik Informatika. Saya adalah seseorang yang masih terus belajar dan berusaha mengembangkan kemampuan diri, terutama di bidang teknologi dan komputer. Saya tertarik untuk mempelajari hal-hal baru, menambah pengalaman, serta memahami bagaimana teknologi dapat membantu mempermudah kehidupan sehari-hari. Bagi saya, menjadi mahasiswa bukan hanya tentang belajar di kelas, tetapi juga tentang membangun pola pikir yang lebih baik dan mempersiapkan diri untuk masa depan.</p>
+            </section>
+            <section>
+                <p>Di luar kegiatan perkuliahan, saya senang mencoba hal-hal baru yang bisa menambah wawasan dan pengalaman. Saya percaya bahwa setiap proses membutuhkan waktu, usaha, dan kemauan untuk terus berkembang. Ke depannya, saya ingin meningkatkan kemampuan di bidang teknologi, khususnya dalam pengembangan web, serta menjadi pribadi yang lebih kreatif, disiplin, dan bertanggung jawab. Saya berharap ilmu yang saya pelajari saat ini dapat menjadi bekal untuk meraih cita-cita dan menciptakan sesuatu yang bermanfaat bagi orang lain.</p>
+            </section>
+        </article>
+
+    </div>
+
+    <!-- Multimedia & Downloads (d & e) -->
+    <div class="multimedia-container" id="gallery">
+        <!-- Konten Video -->
+        <div class="media-box video-box">
+            <video width="100%" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+        </div>
+
+        <!-- Koleksi Foto (Grid) -->
+        <div class="media-box photo-grid">
+            <img src="gambar4.jpeg" alt="Foto 1">
+            <img src="gambar2.jpeg" alt="Foto 2">
+            <img src="gambar3.jpeg" alt="Foto 3">
+            <img src="gambar1.jpeg" alt="Foto 4">
+        </div>
+
+        <!-- Link Download File (Attachments) -->
+        <div class="attachments-box" id="attachments">
+            <h4>Attachments</h4>
+            <ul>
+                <li>📄 <a href="gambar4.jpeg" download>gambar4</a></li>
+                <li>📄 <a href="gambar2.jpeg" download>gambar2</a></li>
+                <li>📄 <a href="gambar3.jpeg" download>gambar3</a></li>
+                <li>📄 <a href="gambar1.jpeg" download>gambar1</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created By Rahmat Campa Aulia - STT Terpadu Nurul Fikri &copy; 2026</p>
+    </footer>
+</div>
+
+</body>
+</html>
